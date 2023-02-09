@@ -1,0 +1,38 @@
+ <main class="m-2 p-8 w-full flex ">
+            <div class="mt-4 p-3">
+                <div class="flex-auto absolute">
+                              <div class="container mx-auto">
+                                  <div class="bg-white max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
+                                    <div class="h-20 bg-sky-900 flex items-center justify-between">
+                                      <h1 class="text-white ml-4 border-2 py-2 px-4 rounded-full">1</h1>
+                                      <p class="mr-20 text-white text-lg">Completed Projects</p>
+                                      <p class="mr-4 text-white font-thin text-lg">ID-2560</p>
+                                    </div>
+                              
+                                    <p class="py-6 text-lg tracking-wide ml-16">Drone Music Video</p>
+                                    <!-- <hr > -->
+                                    <div class="flex justify-between px-5 mb-2 text-sm text-gray-600">
+                                      <p class="text-sky-900">Completed</p>
+                                      <p class="text-sky-900">3/08/2021</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="container mx-auto flex absolute">
+                                  <div class="bg-white max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
+                                    <div class="h-20 bg-rose-700 flex items-center justify-between">
+                                      <h1 class="text-white ml-4 border-2 py-2 px-4 rounded-full">1</h1>
+                                      <p class="mr-20 text-white text-lg">Pending Projects</p>
+                                      <p class="mr-4 text-white font-thin text-lg">ID-296086</p>
+                                    </div>
+                              
+                                    <p class="py-6 text-lg tracking-wide ml-16">Kings Music Video</p>
+                                    <!-- <hr > -->
+                                    <div class="flex justify-between px-5 mb-2 text-sm text-gray-600">
+                                      <p class="text-sky-900">Completed</p>
+                                      <p class="text-sky-900">3/08/2020</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        </main>
