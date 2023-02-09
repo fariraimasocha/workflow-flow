@@ -27,7 +27,9 @@ class Project extends Model
     {
         return [
             'name' => $this->name,
-            'status' => $this->email
+            'status' => $this->email,
+            'company' => $this->company,
+            'description' => $this->description,
         ];
     }
 }

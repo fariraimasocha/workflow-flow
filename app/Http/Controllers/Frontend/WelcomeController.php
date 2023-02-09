@@ -7,17 +7,12 @@ use Illuminate\Http\Request;
 use App\Models\Project;
 class WelcomeController extends Controller
 {
-    public function index(Request $request){
+    public function index(Request $request)
+    {
 
-        
-        $request->validate([
-            'search' => 'nullable|string|max:50'
-       ]);
-         Project::where('name', '%'.$request->input('search').'%')->get();  
+        $query = $request->query('search', '');
 
-
-        $projects = Project::when($request->filled('search'), fn($query) 
-        => $query->where('name', '%'.$request->input('search').'%'))->get();
+        $projects = Project::search($query)->get();
 
 
         $completedCount = Project::where('status', 'completed')->count();
@@ -30,7 +25,8 @@ class WelcomeController extends Controller
         return view('welcome', compact('projects', 'completedCount','rejectedCount','pendingCount'));
     }
 
-    public function ThankYou(){
+    public function ThankYou()
+    {
         return view('ThankYou');
     }
 }
